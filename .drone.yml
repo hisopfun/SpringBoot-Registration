@@ -11,7 +11,7 @@ steps:
 
     #2.maven 打包
   - name: maven-build
-    image: maven:3.8.1-jdk-11
+    image: maven:3.8.1-openjdk-16
     commands:
       - mvn clean package  -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
